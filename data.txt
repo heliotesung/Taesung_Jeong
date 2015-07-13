@@ -1,0 +1,209 @@
+#read dataset till 2013
+xmart <- read.csv("/Users/Nelo4x/Google Drive/Summer Data/SKKU_DataScience_2015-master/data_sets/data combined2.csv")
+
+library (ggplot2)
+qplot(Continent,Life.expectancy,  data=xmart,)
+
+ggplot(xmart, aes(x=Year==1990,y=Life.expectancy, fill=Continent )) +
+  geom_bar(position="dodge", stat="identity")
+
+ggplot(xmart, aes(x=Year, y=Life.expectancy,)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent, colour = Continent))
+
+##Africa##
+
+#read dataset till 2013
+Africa <- read.csv("/Users/Nelo4x/Google Drive/Summer Data/SKKU_DataScience_2015-master/data_sets/Africa.csv")
+
+#Africa Life Exp
+ggplot(Africa, aes(x=Year, y=Life.expectancy,)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Africa", colour = Continent))
+
+#Africa PerCapital
+ggplot(Africa, aes(x=Year, y=Per.capita.total.expenditure.on.health.US..,)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Africa", colour = Continent))
+
+#Africa Goverment
+ggplot(Africa, aes(x=Year, y=Per.capita.government.expenditure.on.health.US..)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Africa", colour = Continent))
+
+#Africa Physicians
+ggplot(Africa, aes(x=Year, y=Physicians.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Africa", colour = Continent))
+
+#Africa Nursing...
+ggplot(Africa, aes(x=Year, y=Nursing.and.midwifery.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Africa", colour = Continent))
+
+#Africa personnel density
+ggplot(Africa, aes(x=Year, y=Dentisty.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Africa", colour = Continent))
+
+#Africa Pharmaceutical
+ggplot(Africa, aes(x=Year, y=Pharmaceutical.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Africa", colour = Continent))
+
+##Americas##
+
+#read dataset till 2013
+Americas <- read.csv("/Users/Nelo4x/Google Drive/Summer Data/SKKU_DataScience_2015-master/data_sets/Americas.csv")
+
+#Americas Life Exp
+ggplot(Americas, aes(x=Year, y=Life.expectancy,)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Americas", colour = Continent))
+
+#Americas PerCapital
+ggplot(Americas, aes(x=Year, y=Per.capita.total.expenditure.on.health.US..,)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Americas", colour = Continent))
+
+#Americas Goverment
+ggplot(Americas, aes(x=Year, y=Per.capita.government.expenditure.on.health.US..)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Americas", colour = Continent))
+
+#Americas Physicians
+ggplot(Americas, aes(x=Year, y=Physicians.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Americas", colour = Continent))
+
+#Americas Nursing...
+ggplot(Americas, aes(x=Year, y=Nursing.and.midwifery.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Americas", colour = Continent))
+
+#Americas personnel density
+ggplot(Americas, aes(x=Year, y=Dentisty.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Americas", colour = Continent))
+
+#Africa Pharmaceutical
+ggplot(Americas, aes(x=Year, y=Pharmaceutical.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Americas", colour = Continent))
+
+##Europe##
+
+#read dataset till 2013
+Europe <- read.csv("/Users/Nelo4x/Google Drive/Summer Data/SKKU_DataScience_2015-master/data_sets/Europe.csv")
+
+#Europe Life Exp
+ggplot(Europe, aes(x=Year, y=Life.expectancy,)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Europe", colour = Continent))
+
+#Europe PerCapital
+ggplot(Europe, aes(x=Year, y=Per.capita.total.expenditure.on.health.US..,)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Europe", colour = Continent))
+
+#Europe Goverment
+ggplot(Europe, aes(x=Year, y=Per.capita.government.expenditure.on.health.US..)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Europe", colour = Continent))
+
+#Europe Physicians
+ggplot(Europe, aes(x=Year, y=Physicians.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Europe", colour = Continent))
+
+#Europe Nursing...
+ggplot(Europe, aes(x=Year, y=Nursing.and.midwifery.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Europe", colour = Continent))
+
+#Europe personnel density
+ggplot(Europe, aes(x=Year, y=Dentisty.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Europe", colour = Continent))
+
+#Europe Pharmaceutical
+ggplot(Europe, aes(x=Year, y=Pharmaceutical.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Europe", colour = Continent))
+
+##Eastern Mediterranean##
+
+#read dataset till 2013
+Eastern_Mediterranean <- read.csv("/Users/Nelo4x/Google Drive/Summer Data/SKKU_DataScience_2015-master/data_sets/Eastern_Mediterranean.csv")
+
+#Eastern_Mediterranean Life Exp
+ggplot(Eastern_Mediterranean, aes(x=Year, y=Life.expectancy,)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Eastern_Mediterranean", colour = Continent))
+
+#Eastern_Mediterranean PerCapital
+ggplot(Eastern_Mediterranean, aes(x=Year, y=Per.capita.total.expenditure.on.health.US..,)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Eastern_Mediterranean", colour = Continent))
+
+#Eastern_Mediterranean Goverment
+ggplot(Eastern_Mediterranean, aes(x=Year, y=Per.capita.government.expenditure.on.health.US..)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Eastern_Mediterranean", colour = Continent))
+
+#Eastern_Mediterranean Physicians
+ggplot(Eastern_Mediterranean, aes(x=Year, y=Physicians.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Eastern_Mediterranean", colour = Continent))
+
+#Eastern_Mediterranean Nursing...
+ggplot(Eastern_Mediterranean, aes(x=Year, y=Nursing.and.midwifery.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Eastern_Mediterranean", colour = Continent))
+
+#Eastern_Mediterranean personnel density
+ggplot(Eastern_Mediterranean, aes(x=Year, y=Dentisty.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Eastern_Mediterranean", colour = Continent))
+
+#Eastern_Mediterranean Pharmaceutical
+ggplot(Eastern_Mediterranean, aes(x=Year, y=Pharmaceutical.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Eastern_Mediterranean", colour = Continent))
+
+##South-East Asia##
+
+#read dataset till 2013
+South_East_Asia <- read.csv("/Users/Nelo4x/Google Drive/Summer Data/SKKU_DataScience_2015-master/data_sets/South-East Asia.csv")
+
+#South_East_Asia Life Exp
+ggplot(South_East_Asia, aes(x=Year, y=Life.expectancy,)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="South_East_Asia", colour = Continent))
+
+#South_East_Asia PerCapital
+ggplot(South_East_Asia, aes(x=Year, y=Per.capita.total.expenditure.on.health.US..,)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="South_East_Asia", colour = Continent))
+
+#South_East_Asia Goverment
+ggplot(South_East_Asia, aes(x=Year, y=Per.capita.government.expenditure.on.health.US..)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="South_East_Asia", colour = Continent))
+
+#South_East_Asia Physicians
+ggplot(South_East_Asia, aes(x=Year, y=Physicians.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="South_East_Asia", colour = Continent))
+
+#South_East_Asia Nursing...
+ggplot(South_East_Asia, aes(x=Year, y=Nursing.and.midwifery.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="South_East_Asia", colour = Continent))
+
+#South_East_Asia personnel density
+ggplot(South_East_Asia, aes(x=Year, y=Dentisty.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="South_East_Asia", colour = Continent))
+
+#South_East_Asia Pharmaceutical
+ggplot(South_East_Asia, aes(x=Year, y=Pharmaceutical.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="South_East_Asia", colour = Continent))
+
+##Western Pacific##
+
+#read dataset till 2013
+Western_Pacific <- read.csv("/Users/Nelo4x/Google Drive/Summer Data/SKKU_DataScience_2015-master/data_sets/Western Pacific.csv")
+
+#Western_Pacific Life Exp
+ggplot(Western_Pacific, aes(x=Year, y=Life.expectancy,)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Western_Pacific", colour = Continent))
+
+#Western_Pacific PerCapital
+ggplot(Western_Pacific, aes(x=Year, y=Per.capita.total.expenditure.on.health.US..,)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Western_Pacific", colour = Continent))
+
+#Western_Pacific Goverment
+ggplot(Western_Pacific, aes(x=Year, y=Per.capita.government.expenditure.on.health.US..)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Western_Pacific", colour = Continent))
+
+#Western_Pacific Physicians
+ggplot(Western_Pacific, aes(x=Year, y=Physicians.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Western_Pacific", colour = Continent))
+
+#Western_Pacific Nursing...
+ggplot(Western_Pacific, aes(x=Year, y=Nursing.and.midwifery.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Western_Pacific", colour = Continent))
+
+#Western_Pacific personnel density
+ggplot(Western_Pacific, aes(x=Year, y=Dentisty.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Western_Pacific", colour = Continent))
+
+#Western_Pacific Pharmaceutical
+ggplot(Western_Pacific, aes(x=Year, y=Pharmaceutical.personnel.density)) +
+  geom_freqpoly(position="dodge", stat="identity",aes(group = Continent=="Western_Pacific", colour = Continent))
